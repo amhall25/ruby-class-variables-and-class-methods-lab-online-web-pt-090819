@@ -42,15 +42,30 @@ class Song
   end
   
   def self.genres
-    arthash={}
-    @@artists.each do |a|
-      if arthash[a]
-        arthash[a]+=1
+    ghash={}
+    @@genres.each do |a|
+      if ghash[a]
+        ghash[a]+=1
       else
-        arthash[a]=1
+        ghash[a]=1
       end
     end
-    return arthash.keys
+    return ghash.keys
   end
+  
+  def self.genre_count
+    ghash={}
+    @@genres.each do |a|
+      if ghash[a]
+        ghash[a]+=1
+      else
+        ghash[a]=1
+      end
+    end
+    return ghash
+  end
+end
+  
+  
 end
   

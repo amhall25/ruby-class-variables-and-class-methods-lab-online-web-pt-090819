@@ -17,8 +17,12 @@ class Song
   end
   
   def self.artists
+    hash={}
+    @@artists.each do |a|
+      hash[a]+=1
+    end
+    return hash.keys
     
-    @@artists.map do |a|
       
   end
 end

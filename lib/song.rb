@@ -41,7 +41,7 @@ class Song
         arthash[a]=1
       end
     end
-    return hash.keys
+    return arthash.keys
   end
 end
   

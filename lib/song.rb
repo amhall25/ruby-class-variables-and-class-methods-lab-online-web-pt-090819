@@ -19,7 +19,11 @@ class Song
   def self.artists
     hash={}
     @@artists.each do |a|
-      hash[a]+=1
+      if hash[a]
+        hash[a]+=1
+      else
+        hash[a]=1
+      end
     end
     return hash.keys
     

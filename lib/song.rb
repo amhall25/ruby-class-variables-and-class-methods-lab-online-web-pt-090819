@@ -17,7 +17,9 @@ class Song
   end
   
   def self.artists
-    @@artists
+    
+    @@artists.map do |a|
+      
   end
 end
   

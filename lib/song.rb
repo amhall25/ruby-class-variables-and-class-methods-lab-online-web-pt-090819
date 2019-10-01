@@ -29,7 +29,16 @@ class Song
   end
   
   def self.artist_count
-    @@arthash
+    arthash={}  
+    @@artists.each do |a|
+      if arthash[a]
+        arthash[a]+=1
+      else
+        arthash[a]=1
+      end
+    end
+    return arthash
+    
   end
   
   def self.genres

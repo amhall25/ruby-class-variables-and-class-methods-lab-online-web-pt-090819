@@ -17,17 +17,27 @@ class Song
   end
   
   def self.artists
-    hash={}
+    arthash={}
     @@artists.each do |a|
       if hash[a]
-        hash[a]+=1
+        arthash[a]+=1
       else
-        hash[a]=1
+        arthash[a]=1
       end
     end
     return hash.keys
-    
-      
+  end
+  
+  def self.genres
+    arthash={}
+    @@artists.each do |a|
+      if hash[a]
+        arthash[a]+=1
+      else
+        arthash[a]=1
+      end
+    end
+    return hash.keys
   end
 end
   

@@ -15,9 +15,9 @@ class Song
   def self.count
     @@count
   end
-  @@arthash={}
+  
   def self.artists
-    
+  @@arthash={}  
     @@artists.each do |a|
       if hash[a]
         arthash[a]+=1
